@@ -1,16 +1,20 @@
 /*  
 Theme Name: Grassroots
-Theme URI: http://eightbar.co.uk/
+Theme URI: https://github.com/shawdm/eightbar_co_uk
 Description: The Eightbar Theme
 Version: 3.0
 Author: Darren Shaw
 Author URI: http://darrenshaw.org
 */
 
+html{
+
+}
+
 body{
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px; /* default size = 1em */
     color: #1c1c1c;
 }
 
@@ -36,6 +40,7 @@ h1{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 2.625em; /* default 42px */
     text-decoration: none;
 }
 
@@ -46,13 +51,15 @@ h1 a, h1 a:HOVER{
 
 h2{
     padding: 0;
-    padding-top:20px;
+
     margin: 0;
+    margin-top: 20px;
     border 0;
     
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
+    font-size: 1.75em; /* default 28px */
     text-transform: uppercase;
 }
 
@@ -66,13 +73,105 @@ h2 a:HOVER{
     color: #000;
 }
 
+h3{
+    color: #1c1c1c;   
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 600;
+    font-size: 0.875em; /*default 14px */
+}
+
+h3 a{
+    background-color: #1c1c1c;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-transform: uppercase;
+}
+
+h3 a:HOVER{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+
+p{
+    font-size: 0.875em; /*default 14px */
+}
+
 
 /* HEADER */
 .grassroots-header{
     position: relative;
-    
     width: 100%;
     height: 400px;
     background-color: #1c1c1c;
 }
 /* END HEADER */
+
+
+/* FOOTER */
+.grassroots-footer-posts{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.grassroots-footer-posts h2{
+    color: #fff; 
+}
+
+.grassroots-footer-posts a{
+    font-weight: 300;
+    color: #fff;
+}
+
+.grassroots-footer-posts a:HOVER{
+    color: #fff; 
+}
+
+.recent-posts{
+    width: 100%;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.recent-posts p{
+    font-size: 0.625em; /* default 10px */
+}
+/* END FOOTER */
+
+
+/* CONTENT */
+.meta{
+    margin-top: 2px;   
+}
+.meta h3{
+    display: inline;
+}
+
+.entry{
+    padding-top: 10px;
+}
+/* END CONTENT */
+
+
+/* RESPONSIVE VIDEO EMBED */
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* END RESPONSIVE VIDEO EMBED */
