@@ -2,7 +2,7 @@
 
 <div class="container">
 
-    <?php 
+    <?php
     if ( have_posts() ) : 
 
         // Start the loop.

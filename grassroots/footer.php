@@ -6,15 +6,32 @@
             <div class="posts">
                 <div class="row">
                     <?php 
-                    rewind_posts();
+                    // get newest 4 posts
+                    query_posts('posts_per_page=4');
                     $postPos = 0;
-                    while ( have_posts() && $postPos < 4 ) : the_post(); ?>
+                    while ( have_posts() && $postPos < 3 ) : the_post(); ?>
                         <div class="col-md-3 recent-post">
                             <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2><?php the_excerpt(); ?> 
                         </div>
                     <?php endwhile; ?>
-                    
-            
+                      <div class="col-md-3 recent-post">
+                          <h2><a>One More</a></h2><p>Blah blah blah.</p>
+                    </div>
+                      <div class="col-md-3 recent-post">
+                          <h2><a>EIGHTBAR.</a></h2>
+                          <p>
+                          Eightbar is a group blog that was created in 2015 by a set of technical and creative people working at IBM's Hursley Park Lab in the UK.  We wanted to allow a range of different voices to give some insight in to what it's like to work here, what we're interested in and what we're working on.
+
+This is not an official IBM website.  We are guided by the IBM Social Computing Guidelines.  The postings on this site are our own and do not necessarily represent IBM’s positions, strategies or opinions.
+
+It would be great to hear from you, so please use Twitter to get in touch.
+                              
+                            
+                          </p>
+                          <p>
+                          <a>Contents</a> | <a>Twitter</a>
+                          </p>
+                    </div>
                 </div>
             </div>
         </div>
