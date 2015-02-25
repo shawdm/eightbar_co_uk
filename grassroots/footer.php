@@ -29,7 +29,7 @@ It would be great to hear from you, so please use Twitter to get in touch.
                             
                           </p>
                           <p>
-                          <a>Contents</a> | <a>Twitter</a>
+                          <a href="<?php echo esc_url(get_permalink(get_page_by_title('contents')));?>">Contents</a> | <a>Twitter</a>
                           </p>
                     </div>
                 </div>
