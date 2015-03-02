@@ -10,7 +10,7 @@
         ?> 
 
             <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-            <div class="meta"><h3><?php the_time('F jS, Y'); ?></h3> <h3>by</h3> <h3><a href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_nicename'); ?></a></h3></div>
+            <div class="meta"><h3><?php the_time('F jS, Y'); ?></h3> <h3>by</h3> <h3 class="author"><a href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_nicename'); ?></a></h3></div>
             <div class="entry"><?php the_content(); ?></div>
 
         <?php	

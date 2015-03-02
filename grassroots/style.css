@@ -80,7 +80,7 @@ h3{
     font-size: 0.875em; /*default 14px */
 }
 
-h3 a{
+h3.author a{
     background-color: #1c1c1c;
     color: #fff;
     text-decoration: none;
@@ -159,6 +159,47 @@ p{
 }
 /* END CONTENT */
 
+
+/* CONTENTS PAGE */
+
+h2.year{
+   
+}
+
+ul.year-posts{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+ul.year-posts li{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 7px;
+    width: 100%;
+    display:table;
+}
+
+ul.year-posts li h3{
+    display: inline;
+    margin-top: 0px;
+    padding: 0px;
+    display:table-cell
+}
+
+ul.year-posts li h3.author{
+    display:table-cell;
+    width: 100px;
+}
+
+ul.year-posts li span.fill{
+    width: auto;
+    background-color: red;
+    display: table-cell;
+}
+
+/* END CONTENTS PAGE */
 
 /* RESPONSIVE VIDEO EMBED */
 .video-wrapper {
