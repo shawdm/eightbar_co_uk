@@ -55,11 +55,13 @@ h2{
     margin: 0;
     margin-top: 20px;
     border 0;
+    text-align: center;
     
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
     font-size: 1.75em; /* default 28px */
+    font-size: 6em;
     text-transform: uppercase;
 }
 
@@ -74,13 +76,29 @@ h2 a:HOVER{
 }
 
 h3{
+    padding: 0;
+
+    margin: 0;
+    margin-top: 20px;
+    border 0;
+    
+    color: #1c1c1c;   
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 1.75em; /* default 28px */
+    text-transform: uppercase;
+}
+
+
+
+h4{
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 600;
     font-size: 0.875em; /*default 14px */
 }
 
-h3.author a{
+h4.author a{
     background-color: #1c1c1c;
     color: #fff;
     text-decoration: none;
@@ -89,7 +107,7 @@ h3.author a{
     text-transform: uppercase;
 }
 
-h3 a:HOVER{
+h4 a:HOVER{
     text-decoration: none;
     background-color: #000;
     color: #fff;
@@ -156,6 +174,8 @@ p{
 
 .entry{
     padding-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 /* END CONTENT */
 
