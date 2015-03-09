@@ -15,6 +15,7 @@ body{
     font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 16px; /* default size = 1em */
+    line-height: 150%;
     color: #1c1c1c;
 }
 
@@ -44,6 +45,10 @@ h1{
     text-decoration: none;
 }
 
+h1, h2, h3, h4{
+ line-height: 110%;   
+}
+
 h1 a, h1 a:HOVER{
     color: #fff;
     text-decoration: none;
@@ -60,19 +65,12 @@ h2{
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
-    font-size: 1.75em; /* default 28px */
-    font-size: 6em;
+    font-size: 6em; /* 96px */
     text-transform: uppercase;
 }
 
-h2 a{
-    color: #1c1c1c;   
-    text-decoration: none;
-}
-
-h2 a:HOVER{
-    text-decoration: none;
-    color: #000;
+h2 a, h2 a:HOVER{
+ text-decoration: none;   
 }
 
 h3{
@@ -88,6 +86,12 @@ h3{
     font-size: 1.75em; /* default 28px */
     text-transform: uppercase;
 }
+
+
+h3 a, h3 a:HOVER{
+ text-decoration: none;   
+}
+
 
 
 
@@ -116,6 +120,7 @@ h4 a:HOVER{
 
 p{
     font-size: 0.875em; /*default 14px */
+    line-height: 150%;
 }
 
 
@@ -174,8 +179,8 @@ p{
 
 .entry{
     padding-top: 10px;
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 1.25em; /* 20 px */
+    line-height: 150%;
 }
 /* END CONTENT */
 
