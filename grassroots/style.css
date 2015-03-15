@@ -8,14 +8,15 @@ Author URI: http://darrenshaw.org
 */
 
 html{
-
+    font-size: 16px; /* default size = 1rem */
+    
 }
 
 body{
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    font-size: 16px; /* default size = 1em */
-    line-height: 150%;
+    font-size: 1rem; /* default size 16px */
+    line-height: 150%; /* eightbar ration */
     color: #1c1c1c;
 }
 
@@ -41,12 +42,12 @@ h1{
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 2.625em; /* default 42px */
+    font-size: 3.6875rem; /* default to 59px */
     text-decoration: none;
 }
 
 h1, h2, h3, h4{
- line-height: 110%;   
+    line-height: 1;   
 }
 
 h1 a, h1 a:HOVER{
@@ -56,16 +57,16 @@ h1 a, h1 a:HOVER{
 
 h2{
     padding: 0;
-
     margin: 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     border 0;
     text-align: center;
     
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
-    font-size: 6em; /* 96px */
+    font-size: 6rem; /* 96px */
     text-transform: uppercase;
 }
 
@@ -83,7 +84,7 @@ h3{
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
-    font-size: 1.75em; /* default 28px */
+    font-size: 2.25rem; /* default 36px */
     text-transform: uppercase;
 }
 
@@ -99,7 +100,7 @@ h4{
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 600;
-    font-size: 0.875em; /*default 14px */
+    font-size: 0.875rem; /*default 14px */
 }
 
 h4.author a{
@@ -119,8 +120,8 @@ h4 a:HOVER{
 
 
 p{
-    font-size: 0.875em; /*default 14px */
-    line-height: 150%;
+    font-size: 1rem; /*default 16px */
+    line-height: 1.5;
 }
 
 
@@ -164,7 +165,7 @@ p{
 }
 
 .grassroots-footer-posts a{
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -174,32 +175,29 @@ p{
 
 .recent-posts{
     width: 100%;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
 .recent-posts p{
-    font-size: 0.625em; /* default 10px */
+    font-size: 0.5625rem; /* default 9px */
 }
 /* END FOOTER */
 
 
 /* CONTENT */
-.meta{
-    margin-top: 2px;   
-}
-.meta h3{
-    display: inline;
+p.meta{
+    text-align: center;    
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 10px;
+    
 }
 
-.entry{
-    padding-top: 10px;
-    font-size: 1.25em; /* 20 px */
-    line-height: 150%;
-}
+
 /* END CONTENT */
-
 
 /* MAKE EMBEDDED CONTENT MATCH STYLE */
 .entry h1, .entry h2, .entry h3, .entry h4, .entry h5{
@@ -207,24 +205,25 @@ p{
     padding: 0;
 
     margin: 0;
-    margin-top: 20px;
+    margin-top: 40px;
     border 0;
     
     color: #1c1c1c;   
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
-    font-size: 1.75em; /* default 28px */
+    font-size: 2.25rem; /* default 36px */
     text-transform: uppercase;
 }
 /* END MAKE EMBEDDED CONTENT MATCH STYLE */
 
 
-/* CONTENTS PAGE */
-
-h2.year{
-   
+/* HIDE UNSTYLABLE FEED FOOTER */
+.entry div{
+    display: none;
+    visibility: hidden;
 }
 
+/* CONTENTS PAGE */
 ul.year-posts{
     margin: 0px;
     padding: 0px;
@@ -242,14 +241,11 @@ ul.year-posts li{
     text-align: left;
 }
 
-ul.year-posts li h3{
-    display: inline;
+ul.year-posts li h4{
+    font-size: 1rem; /* default 36px */
     margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0px;
-}
-
-ul.year-posts li h3.author{
-    width: 100px;
 }
 
 

@@ -47,7 +47,6 @@ It would be great to hear from you, so please use Twitter to get in touch.
             <?php foreach($posts as $post) : setup_postdata($post); ?>
             <li>
                 <h4 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4> <?php echo eb_excerpt(); ?> 
-                <!--<h4 class="author"><a href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('user_nicename'); ?></a></h4>-->
             </li>
             <?php endforeach; ?>
         </ul>
