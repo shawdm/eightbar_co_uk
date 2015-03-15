@@ -14,6 +14,6 @@
 <body>
    
 <div class="grassroots-header">
-   <h1><a href="">EIGHTBAR.</a></h1>
+   <h1><a href="<?php echo home_url( '/' ); ?>">EIGHTBAR.</a></h1>
 </div>
    

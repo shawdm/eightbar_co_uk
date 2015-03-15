@@ -124,6 +124,16 @@ p{
 }
 
 
+.columns{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.columns ul{
+      text-align: center;
+}
+
 /* HEADER */
 .grassroots-header{
     position: relative;
@@ -191,6 +201,24 @@ p{
 /* END CONTENT */
 
 
+/* MAKE EMBEDDED CONTENT MATCH STYLE */
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5{
+    position: relative;
+    padding: 0;
+
+    margin: 0;
+    margin-top: 20px;
+    border 0;
+    
+    color: #1c1c1c;   
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 1.75em; /* default 28px */
+    text-transform: uppercase;
+}
+/* END MAKE EMBEDDED CONTENT MATCH STYLE */
+
+
 /* CONTENTS PAGE */
 
 h2.year{
@@ -208,27 +236,22 @@ ul.year-posts li{
     margin: 0px;
     padding: 0px;
     margin-top: 7px;
+    margin-bottom: 10px;
     width: 100%;
-    display:table;
+    display: inline-block;
+    text-align: left;
 }
 
 ul.year-posts li h3{
     display: inline;
     margin-top: 0px;
     padding: 0px;
-    display:table-cell
 }
 
 ul.year-posts li h3.author{
-    display:table-cell;
     width: 100px;
 }
 
-ul.year-posts li span.fill{
-    width: auto;
-    background-color: red;
-    display: table-cell;
-}
 
 /* END CONTENTS PAGE */
 
